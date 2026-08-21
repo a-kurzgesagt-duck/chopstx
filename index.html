@@ -9,11 +9,26 @@
     <link rel=icon type="image/png" href="FAVICON.png"> 
     <title>chopstx</title>
   <style>
-
+.box-element {
+    display: inline-block;
+  transition: transform 0.1s ease;
+}
+.spinning {
+  animation: spin 1s linear infinite; 
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 </style>
 </head>
 <body>
 <h1>chopstx's website</h1>
+<h4 class="box-element">spinning text</h4>
 <button type="button" onclick="alert('Wow! You clicked a button!')">Click Me!</button>
 </body>
 <script>
