@@ -29,8 +29,13 @@
 <body>
 <h1>chopstx's website</h1>
 <h4 class="box-element spinning">spinning text</h4>
-<button type="button" onclick="alert('Wow! You clicked a button!')">Click Me!</button>
+<button id="spin-button">Spin Text</button>
+<button id="stop-button">Stop Text</button>
 </body>
 <script>
+const spin = document.getElementById("spin-button");
+const stop = document.getElementById("stop-button");
+spin.addEventListener("click", let spin = true);
+stop.addEventLister("click", let spin = false);
 </script>
 </html>
