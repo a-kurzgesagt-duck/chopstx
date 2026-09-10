@@ -35,13 +35,12 @@
 <script>
 const spin = document.getElementById("spin-button");
 const stop = document.getElementById("stop-button");
-spin.addEventListener("click", let spin = true);
-stop.addEventLister("click", let spin = false);
-if (spin = true) {
-box-element.classList.add('spinning');
-}   else {
-  box-element.classList.remove('spinning');
-}
-    
+const boxElement = document.querySelector("box-element");
+ spin.addEventListener("click", () => {
+    textElement.classList.add('spinning');
+  });
+stopButton.addEventListener("click", () => {
+    textElement.classList.remove('spinning');
+  });
 </script>
 </html>
