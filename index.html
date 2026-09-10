@@ -28,7 +28,7 @@
 </style>
 </head>
 <body>
-<h1>chopstx's website</h1>
+<h1>my website</h1>
 <h4 class="box-element">spinning text</h4>
 <button id="spin-button">Spin Text</button>
 <button id="stop-button">Stop Text</button>
@@ -38,10 +38,10 @@ const spin = document.getElementById("spin-button");
 const stop = document.getElementById("stop-button");
 const boxElement = document.querySelector(".box-element");
  spin.addEventListener("click", () => {
-    textElement.classList.add('spinning');
+    boxElement.classList.add('spinning');
   });
 stop.addEventListener("click", () => {
-    textElement.classList.remove('spinning');
+    boxElement.classList.remove('spinning');
   });
 </script>
 </html>
