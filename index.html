@@ -14,6 +14,7 @@
   transition: transform 0.1s ease;
 }
 .spinning {
+    display: inline-block;
   animation: spin 1s linear infinite; 
 }
 @keyframes spin {
@@ -35,11 +36,11 @@
 <script>
 const spin = document.getElementById("spin-button");
 const stop = document.getElementById("stop-button");
-const boxElement = document.querySelector("box-element");
+const boxElement = document.querySelector(".box-element");
  spin.addEventListener("click", () => {
     textElement.classList.add('spinning');
   });
-stopButton.addEventListener("click", () => {
+stop.addEventListener("click", () => {
     textElement.classList.remove('spinning');
   });
 </script>
